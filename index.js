@@ -24,15 +24,19 @@ else{
 }
 //b) If the string uses commas to separate the words, split it into an array, reverse the entries, and then join the array into a new comma separated string.
 
-
+let protoArray4New;
 if (protoArray4.includes(',')){
-  let protoArray4New = (protoArray4.split(""));
+   protoArray4New = (protoArray4.split(""));
 }
-
 console.log(protoArray4New.reverse());
+
+console.log(protoArray4New.join());
 //c) If the string uses semicolons to separate the words, split it into an array, alphabetize the entries, and then join the array into a new comma separated string.
-
-
+if (protoArray2.includes(';'))
+protoArray2New = (protoArray2.split(""));
+console.log(protoArray2New);
+let [protoArray2Sort] = ([protoArray2New.sort()]);
+console.log([protoArray2Sort].join());
 
 //d) If the string uses spaces to separate the words, split it into an array, reverse alphabetize the entries, and then join the array into a new space separated string.
 
